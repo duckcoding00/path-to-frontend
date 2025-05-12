@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ardi Sasongko" />
+    <meta name="description" content="belajar html table basic" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css" type="text/css" />
+    <link
+      rel="icon"
+      href="../Duck Programmer at Work.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <h3>Basic Table</h3>
+
+    <table>
+      <caption>
+        Daily Activity
+      </caption>
+      <thead>
+        <tr>
+          <th>&nbsp;</th>
+          <th scope="col">Time</th>
+          <th scope="col">Activity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Morning</th>
+          <td>
+            <time datetime="08:00">08:00</time>-<time datetime="12:00"
+              >12:00</time
+            >
+          </td>
+          <td>Coding Morning</td>
+        </tr>
+        <tr>
+          <th scope="row">Afternoon</th>
+          <td>
+            <time datetime="13:00">13:00</time>-<time datetime="15:00"
+              >15:00</time
+            >
+          </td>
+          <td>Coding Afternoon</td>
+        </tr>
+        <tr>
+          <th scope="row">Night</th>
+          <td>
+            <time datetime="18:00">18:00</time>-<time datetime="21:00"
+              >21:00</time
+            >
+          </td>
+          <td>Coding Night</td>
+        </tr>
+        <tr>
+          <td rowspan="2" colspan="2">Free Time</td>
+          <td>Gaming</td>
+        </tr>
+        <tr>
+          <td>resting</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">thats is my daily activity</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

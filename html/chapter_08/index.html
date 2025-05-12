@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="author" content="Ardi Sasongko" />
+      <meta name="description" content="belajar html form input basic" />
+      <title>Document</title>
+      <link rel="stylesheet" href="../main.css" type="text/css" />
+      <link
+        rel="icon"
+        href="../Duck Programmer at Work.png"
+        type="image/x-icon"
+      />
+    </head>
+  </head>
+  <body>
+    <header>
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Basic HTML Form Input</h1>
+      <article id="contact">
+        <h2>Contact Me</h2>
+        <p>send your thoughts</p>
+
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Personal Info</legend>
+
+            <p>
+              <label for="firstName">firstname :</label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="Budi"
+                autocomplete="on"
+                required
+              />
+            </p>
+            <p>
+              <label for="lastName">lastname :</label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Suyatno"
+                autocomplete="on"
+                required
+              />
+            </p>
+            <p>
+              <label for="password">password :</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="your secret password"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="phone">phone :</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="0000-0000-0000"
+                pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                required
+              />
+            </p>
+            <p>
+              <label for="decade">favorite decade :</label>
+              <input
+                type="number"
+                name="decade"
+                id="decade"
+                min="1980"
+                max="2025"
+                step="5"
+                value="2000"
+              />
+            </p>
+            <!-- <p>
+            <label for="tea">Favorite Tea:</label>
+            <select name="tea" id="tea">
+              <optgroup label="original">
+                <option value="regular tea">Regular Tea</option>
+                <option value="iced tea" selected>Iced Tea</option>
+                <option value="hot tea">Hot Tea</option>
+              </optgroup>
+              <optgroup label="experemental">
+                <option value="caramel tea">Caramel Tea</option>
+              </optgroup>
+            </select>
+          </p> -->
+            <p>
+              <label for="tea">favorite tea:</label>
+              <input type="text" name="tea" id="tea" list="tea-list" />
+              <datalist id="tea-list">
+                <option value="iced tea">iced tea</option>
+                <option value="hot tea">hot tea</option>
+                <option value="coffe tea">coffe tea</option>
+                <option value="caramel tea">caramel tea</option>
+              </datalist>
+            </p>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>What Your Favorite Foods?</legend>
+            <p>
+              <input
+                type="radio"
+                name="food"
+                id="gado-gado"
+                value="gado-gado"
+              />
+              <label for="gado-gado">Gado-Gado</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="lotek" value="lotek" />
+              <label for="lotek">Lotek</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="mie ayam" value="mie ayam" />
+              <label for="mie ayam">Mie Ayam</label>
+            </p>
+          </fieldset>
+
+          <br />
+
+          <fieldset>
+            <legend>Do You Have Pet?</legend>
+            <p>
+              <input type="checkbox" name="pets" id="dog" value="dog" />
+              <label for="dog">Dog</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="cat" value="cat" />
+              <label for="cat">Cat</label>
+            </p>
+            <p>
+              <input type="checkbox" name="pets" id="fish" value="fish" />
+              <label for="fish">Fish</label>
+            </p>
+          </fieldset>
+
+          <br />
+          <fieldset>
+            <legend>Send Me a Note</legend>
+
+            <label for="message">Your Message:</label>
+            <br />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="type your message here"
+            ></textarea>
+          </fieldset>
+
+          <br />
+
+          <button type="submit">Submit</button>
+          <button
+            type="submit"
+            formaction="https://httpbin.org/post"
+            formmethod="post"
+          >
+            Post Button
+          </button>
+          <button type="reset">Reset</button>
+        </form>
+      </article>
+    </main>
+    <footer>
+      <p><a href="#">Back on Top</a></p>
+    </footer>
+  </body>
+</html>
