@@ -1,0 +1,29 @@
+body {
+  background-image: url("Karakter_03.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+h2 {
+  color: #dfd0b8;
+  font-family: "Underdog", system-ui;
+  font-style: italic;
+
+  background: linear-gradient(#222831, #393e46);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+p {
+  color: #dfd0b8;
+  font-family: "consolas", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+
+  background: linear-gradient(#222831, #393e46);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

@@ -1,0 +1,9 @@
+#box1 {
+  border: 1px solid;
+  height: 250px;
+  width: 250px;
+  font-size: 150px;
+  text-align: center;
+  background-color: red;
+  line-height: 125px;
+}

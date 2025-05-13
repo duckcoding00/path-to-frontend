@@ -1,0 +1,27 @@
+body {
+  background-color: #222831;
+}
+
+h2 {
+  color: #dfd0b8;
+  font-family: "Underdog", system-ui;
+  font-style: italic;
+
+  border-bottom-style: solid;
+  border-bottom-color: #948979;
+  padding-bottom: 5px;
+}
+
+p {
+  color: #dfd0b8;
+  font-family: "consolas", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #948979;
+  border-width: 5px;
+  padding: 5px;
+}

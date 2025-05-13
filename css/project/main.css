@@ -1,0 +1,213 @@
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #faeed1;
+}
+
+nav li {
+  margin: 0 15px;
+  padding: 10px 0;
+}
+
+nav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #333;
+  font-family: "Lexend Deca", system-ui;
+}
+
+nav a:hover {
+  color: #666;
+}
+
+body {
+  margin: 0px;
+  background-color: #fdf7e4;
+}
+
+#main1 {
+  background-color: #faeed1;
+  display: flex;
+  font-family: "Lexend Deca", system-ui;
+  color: #333;
+  padding: 10px;
+}
+
+#about p {
+  font-size: 25px;
+  padding-top: 25px;
+}
+
+#about h1 {
+  font-weight: bold;
+}
+
+#aside1 {
+  padding: 10px;
+  font-family: "Lexend Deca", system-ui;
+  color: #333;
+  background-color: #ded0b6;
+}
+
+#aside1 summary {
+  font-size: 20px;
+}
+
+#aside1 details {
+  font-size: 25px;
+}
+
+#activity {
+  background-color: #faeed1;
+  display: flex;
+  font-family: "Lexend Deca", system-ui;
+  color: #333;
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+}
+
+th,
+td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #bbab8c;
+  color: #fdf7e4;
+  font-weight: bold;
+}
+
+caption {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.back-to-top {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ded0b6;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 20px;
+  font-family: "Lexend Deca", system-ui;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #ded0b6;
+}
+
+.back-to-top:hover {
+  background-color: #bbab8c;
+  color: #fdf7e4;
+}
+
+footer {
+  background-color: #bbab8c;
+  padding: 20px 0;
+  text-align: center;
+  font-family: "Lexend Deca", system-ui;
+  color: #fdf7e4;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+#contact {
+  background-color: #FAEED1;
+  padding: 20px;
+  margin: 20px 0;
+  font-family: "Lexend Deca", system-ui;
+}
+
+#contact h2 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact fieldset {
+  border: 2px solid #DED0B6;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+#contact legend {
+  color: #333;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+#contact label {
+  display: inline-block;
+  width: 100px;
+  color: #333;
+}
+
+#contact input, 
+#contact textarea {
+  width: 80%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #DED0B6;
+  border-radius: 4px;
+  font-family: "Lexend Deca", system-ui;
+}
+
+#contact button {
+  background-color: #DED0B6;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 5px;
+  font-family: "Lexend Deca", system-ui;
+  transition: all 0.3s ease;
+}
+
+#contact button:hover {
+  background-color: #BBAB8C;
+  color: #FDF7E4;
+}
+
+#address {
+  background-color: #FAEED1;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  font-family: "Lexend Deca", system-ui;
+  color: #333;
+}
+
+#address h2 {
+  margin-bottom: 15px;
+}
+
+#address p {
+  margin-bottom: 10px;
+}
+
+#address address {
+  font-style: italic;
+  color: #666;
+}
+
+#address abbr {
+  text-decoration: none;
+  font-weight: bold;
+}

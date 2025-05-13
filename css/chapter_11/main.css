@@ -1,0 +1,22 @@
+#box1 {
+  border: 1px solid;
+  height: 250px;
+  width: 250px;
+  font-size: 150px;
+  text-align: center;
+  background-color: red;
+  line-height: 125px;
+}
+
+#box1:active {
+  animation: 3s linear infinite slideAnimation;
+}
+
+@keyframes slideAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
