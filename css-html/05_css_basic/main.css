@@ -1,0 +1,58 @@
+p {
+  font-family: Arial;
+  margin-bottom: 1px;
+  margin-left: 15px;
+}
+
+.p-title {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.p-desc {
+  margin-top: 1px;
+  font-style: italic;
+  font-size: 10px;
+  color: rgb(68, 68, 68);
+}
+
+.p-author {
+  margin-top: 3px;
+  margin-bottom: 7px;
+  font-size: 13px;
+  color: rgb(68, 68, 68);
+}
+
+.p-content {
+  margin-top: 8px;
+  font-size: 20px;
+  text-align: justify;
+  color: rgb(68, 68, 68);
+  line-height: 25px;
+  width: 100%;
+}
+
+.p-link {
+  font-size: 20px;
+  color: rgb(68, 68, 68);
+}
+
+.p-link {
+  margin-top: 80px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(250, 74, 74);
+  color: rgb(255, 234, 234);
+  text-align: center;
+}
+
+.p-link a {
+  text-decoration: none;
+  color: white;
+}
+
+.p-link a:hover {
+  color: rgba(216, 216, 216, 0.876);
+  text-decoration: underline;
+}

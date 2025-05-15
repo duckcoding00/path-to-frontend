@@ -1,0 +1,81 @@
+.header {
+  display: flex;
+  background-color: #213448;
+  align-items: center;
+  height: 70px;
+  padding: 0 20px;
+}
+
+.header-title {
+  width: auto;
+  margin-left: 25px;
+  font-family: "Contrail One", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  cursor: pointer;
+}
+
+.header-list {
+  flex: 1;
+}
+
+.header-list ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header-list li {
+  margin: 0 15px;
+  position: relative;
+}
+
+.header-list a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  padding: 8px 15px;
+  display: block;
+  transition: color 0.3s;
+}
+
+.header-list a:hover {
+  color: #3498db;
+}
+
+.header-list a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  background-color: #3498db;
+  transition: all 0.3s ease;
+}
+
+.header-list a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.header-icon {
+  width: auto;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.header-icon-profile {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}

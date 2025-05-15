@@ -1,0 +1,135 @@
+.assets {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  background-color: #f0f0f0;
+}
+
+.input-search {
+  flex: 1;
+  height: 35px;
+  padding-left: 10px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  width: 0px;
+}
+
+.btn-search {
+  height: 40px;
+  background-color: white;
+  border: 0.5px solid;
+  border-color: #ccc;
+}
+
+p,
+h3 {
+  font-family: "Contrail One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+body {
+  margin: 1px;
+}
+
+.p-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+}
+
+.p-creator,
+.p-stats {
+  font-size: 12px;
+  color: rgb(61, 61, 61);
+}
+
+.p-creator {
+  margin-bottom: 4px;
+}
+
+#p-header {
+  font-size: 30px;
+  margin-left: 50px;
+}
+.vid-preview {
+  width: 100%;
+  vertical-align: top;
+}
+
+.info-row {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  margin-top: 12px;
+}
+
+.vid-profile {
+  margin-right: 12px;
+}
+
+.img-profile {
+  width: 35px;
+  border-radius: 90px;
+  object-fit: contain;
+}
+
+.vid-info > div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.material-symbols-outlined {
+  color: rgb(61, 61, 61);
+  cursor: pointer;
+}
+
+.assets-row {
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.vid-grid {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.header {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  width: 250px;
+}
+
+.right-section {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.middle-section {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-left: 60px;
+  margin-right: 30px;
+  max-width: 500px;
+}
+
+.duck {
+  margin-left: 10px;
+  color: rgb(61, 61, 61);
+}
