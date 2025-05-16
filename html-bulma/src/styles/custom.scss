@@ -1,0 +1,14 @@
+$some-color: #273f4f;
+
+@use "../../node_modules/bulma/sass/utilities/" as utilities with (
+  $success: $some-color
+);
+
+@use "../../node_modules/bulma/sass/base/" as base;
+@use "../../node_modules/bulma/sass/themes/" as themes;
+
+/* Elements*/
+@forward "../../node_modules/bulma/sass/elements/";
+
+/* Components*/
+@forward "../../node_modules/bulma/sass/components/";
