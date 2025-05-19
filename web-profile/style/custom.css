@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --bulma-family-sans-serif: "Arvo", serif;
+  --bulma-family-primary: var(--bulma-family-sans-serif);
+  --bulma-family-secondary: var(--bulma-family-sans-serif);
+}
+
+body {
+  font-family: var(--bulma-family-primary);
+}
+
+.navbar-item img {
+  max-height: 70px;
+  width: auto;
+}
+
+.navbar-brand {
+  align-items: center;
+}
+
+.custom-box {
+  box-shadow: 0 0 18px rgba(147, 199, 255, 0.2) !important;
+  border-radius: 50% !important;
+  background-color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.custom-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 25px rgba(147, 199, 255, 0.4) !important;
+}
+
+.custom-box .image {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .custom-box {
+    max-width: 220px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar-menu.is-active {
+    display: block;
+  }
+
+  .navbar-menu.is-active .navbar-end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0 !important;
+  }
+
+  .navbar-menu.is-active .navbar-item {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .custom-box {
+    max-width: 250px;
+  }
+}
+
+.grid img {
+  max-height: 50px;
+  width: auto;
+}
+
+.grid .box {
+  width: 70px;
+  height: 70px;
+}
+
+.skill-box {
+  height: 80%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.columns.is-multiline.mx-0 {
+  margin-left: -0.5rem !important;
+  margin-right: -0.5rem !important;
+}
+
+.card-box {
+  background-color: white;
+  max-width: 380px;
+  height: auto;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.8em 1.5em -0.125em rgba(10, 10, 10, 0.1);
+  cursor: pointer;
+}
+
+.card-image {
+  border-bottom: 1px solid #eee;
+}
+
+.tag {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tag:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 0.8em 1.5em -0.125em rgba(10, 10, 10, 0.1);
+}
+
+.article-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .article-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .article-meta .read-time {
+    margin-bottom: 0.5rem;
+  }
+
+  .article-meta .article-tags {
+    width: 100%;
+  }
+}
+
+.blog-box {
+  box-shadow: 0 0 0 !important;
+  border-bottom: 1px solid rgba(147, 199, 255, 0.2) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.8em 1.5em -0.125em rgba(10, 10, 10, 0.1);
+  cursor: pointer;
+}
+
+.sticky-tags {
+  position: sticky;
+  top: 2rem;
+  padding: 1rem;
+  max-height: calc(100vh - 4rem);
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .sticky-tags {
+    position: static;
+    padding: 0;
+  }
+}
+
+.navbar-menu.is-active {
+  display: block;
+  animation: slideDown 0.3s ease-in-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-item a {
+  position: relative;
+  text-decoration: none;
+}
+
+.navbar-item a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.navbar-item a:hover::after {
+  width: 100%;
+}
+
+/* Style for active page */
+.navbar-item a.is-active::after {
+  width: 100%;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ardi Sasongko | Website</title>
+    <link rel="icon" href="assets/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="style/custom.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar has-shadow"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="assets/icon.png" alt="icon" />
+        </a>
+        <a class="navbar-item pl-0" href="index.html">
+          <p class="title is-size-5">DuckCoding</p>
+        </a>
+        <a
+          role="button"
+          class="navbar-burger has-text-black mr-4"
+          aria-label="menu"
+          aria-expanded="false"
+          id="nav-burger"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu" id="nav-menu">
+        <div class="navbar-end mr-4">
+          <div class="navbar-item">
+            <a class="is-size-5 has-text-black" href="index.html">Home</a>
+          </div>
+          <div class="navbar-item">
+            <a class="is-size-5 has-text-black" href="about.html">About</a>
+          </div>
+          <div class="navbar-item">
+            <a class="is-size-5 has-text-black" href="portfolio.html"
+              >Portfolio</a
+            >
+          </div>
+          <div class="navbar-item">
+            <a class="is-size-5 has-text-black" href="blog.html">Blog</a>
+          </div>
+          <div class="navbar-item">
+            <a class="is-size-5 has-text-black" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <p class="has-text-centered">
+          <span class="title is-size-2 has-text-centered pb-6"
+            >Gets in touch!</span
+          ><br />
+          <span class="subtitle is-size-7 has-text-centered pb-6">
+            leave your details and a short message bellow</span
+          >
+        </p>
+
+        <div class="box">
+          <form>
+            <div class="columns is-mobile is-centered is-multiline">
+              <div class="column is-12-mobile is-6-tablet">
+                <div class="field">
+                  <div class="label">username</div>
+                  <div class="control">
+                    <input type="text" class="input" placeholder="your name" />
+                  </div>
+                </div>
+              </div>
+              <div class="column is-12-mobile is-6-tablet">
+                <div class="field">
+                  <div class="label">email</div>
+                  <div class="control">
+                    <input
+                      type="email"
+                      class="input"
+                      placeholder="your email"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea
+                  class="textarea"
+                  placeholder="your message"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <button
+                  class="button is-dark is-fullwidth is-rounded"
+                  type="submit"
+                >
+                  submit
+                </button>
+              </div>
+            </div>
+            <div class="field">
+              <div class="control">
+                <button
+                  class="button is-light is-fullwidth is-rounded"
+                  type="reset"
+                >
+                  reset
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
