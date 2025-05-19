@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ardi Sasongko" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="columns is-8 is-variable">
+          <div class="column is-7-tablet">
+            <div class="tabs is-boxed">
+              <ul>
+                <li class="is-active" data-target="action-1">
+                  <a class="has-text-grey">Some Action</a>
+                </li>
+                <li data-target="action-2">
+                  <a class="has-text-grey">Some Action</a>
+                </li>
+              </ul>
+            </div>
+            <div class="pz-2" id="tab-content">
+              <div id="action-1">
+                <h3 class="is-size-5 title has-text-grey">Action 1</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Libero, eaque!
+                </p>
+              </div>
+              <div id="action-2" class="is-hidden">
+                <h3 class="is-size-5 title has-text-grey">Action 2</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Libero, eaque! Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Soluta, consectetur.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-5-tablet">
+            <div class="message">
+              <div class="message-header">Some Message</div>
+              <div class="message-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                fugit?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Soluta, vel?
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

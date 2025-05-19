@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ardi Sasongko" />
+    <title>Flexbox</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <!-- Shrink demo -->
+      <h2 class="title is-4 has-text-centered mb-4">
+        Shrink Demo (resize window untuk melihat efeknya)
+      </h2>
+      <div
+        class="is-flex is-justify-content-space-around p-4 mb-6"
+        style="border: 1px solid black; overflow: hidden"
+      >
+        <div
+          class="box has-background-danger m-3 is-flex-shrink-0"
+          style="width: 300px; height: 100px"
+        >
+          is-flex-shrink-0 (tidak mengecil)
+        </div>
+        <div
+          class="box has-background-warning m-3 is-flex-shrink-1"
+          style="width: 300px; height: 100px"
+        >
+          is-flex-shrink-1 (mengecil normal)
+        </div>
+        <div
+          class="box has-background-info m-3 is-flex-shrink-5"
+          style="width: 300px; height: 100px"
+        >
+          is-flex-shrink-5 (mengecil lebih cepat)
+        </div>
+      </div>
+
+      <!-- Grow demo -->
+      <h2 class="title is-4 has-text-centered mb-4">Grow Demo</h2>
+      <div class="is-flex p-4 mb-6" style="border: 1px solid black">
+        <div
+          class="box has-background-danger m-3 is-flex-grow-0"
+          style="width: 150px; height: 100px"
+        >
+          is-flex-grow-0
+        </div>
+        <div
+          class="box has-background-warning m-3 is-flex-grow-1"
+          style="width: 150px; height: 100px"
+        >
+          is-flex-grow-1
+        </div>
+        <div
+          class="box has-background-info m-3 is-flex-grow-5"
+          style="width: 150px; height: 100px"
+        >
+          is-flex-grow-5
+        </div>
+      </div>
+
+      <!-- Kombinasi demo -->
+      <h2 class="title is-4 has-text-centered mb-4">Layout Kombinasi</h2>
+      <div
+        class="is-flex is-flex-wrap-wrap is-justify-content-center p-4"
+        style="border: 1px solid black"
+      >
+        <div
+          class="box has-background-danger m-3 is-flex-grow-0 is-flex-shrink-0"
+          style="width: 300px; height: 300px"
+        >
+          box 1 (tidak shrink, tidak grow)
+        </div>
+        <div
+          class="box has-background-warning m-3 is-flex-grow-1 is-flex-shrink-1"
+          style="width: 300px; height: 300px"
+        >
+          box 2 (grow dan shrink normal)
+        </div>
+        <div
+          class="box has-background-info m-3 is-flex-grow-0 is-flex-shrink-5"
+          style="width: 300px; height: 300px"
+        >
+          box 3 (shrink cepat, tidak grow)
+        </div>
+        <div
+          class="box has-background-success m-3 is-flex-grow-5 is-flex-shrink-0"
+          style="width: 300px; height: 300px"
+        >
+          box 4 (grow banyak, tidak shrink)
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
