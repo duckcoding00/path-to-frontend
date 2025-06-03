@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("./style.css");
+    </style>
+  </head>
+  <body>
+    <h1>Test Hello World</h1>
+    <script type="module">
+      import { sayHello } from "./sayhello.js";
+      import { sayGoodBye } from "./saygoodbye.ts";
+      import * as person from "./person.json";
+      sayHello("joko");
+      sayGoodBye("budi");
+      console.log("hello vite");
+
+      console.log(person.name);
+      console.log(person.age);
+      console.log(person.address);
+    </script>
+  </body>
+</html>

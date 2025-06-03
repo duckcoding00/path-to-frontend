@@ -1,0 +1,1 @@
+import"./modulepreload-polyfill-B5Qt9EMX.js";import{s as o}from"./sayhello-BCgv-Chz.js";import{s}from"./saygoodbye-CuxrGzW4.js";const l="budi",e=25,a="jakarta";o("joko");s("budi");console.log("hello vite");console.log(l);console.log(e);console.log(a);

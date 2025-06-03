@@ -1,0 +1,46 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>%sveltekit.error.message%</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
+		<style>
+			.error-box {
+				padding: 0 !important;
+				height: 500px;
+			}
+			.error-columns {
+				height: 100%;
+				margin: 0 !important;
+			}
+			.error-column {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100%;
+				padding: 0 !important;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="section">
+			<div class="container">
+				<div class="box error-box">
+					<div class="columns is-mobile is-multiline error-columns">
+						<div
+							class="column is-6-tablet is-12-mobile has-background-primary has-text-white has-text-centered error-column"
+						>
+							<p class="title has-text-white">OOPS!!!</p>
+						</div>
+						<div
+							class="column is-6-tablet is-12-mobile has-background-danger has-text-white has-text-centered error-column"
+						>
+							<p class="title has-text-white">%sveltekit.status%: %sveltekit.error.message%</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
